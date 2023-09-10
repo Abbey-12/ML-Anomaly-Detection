@@ -8,7 +8,7 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-# Copy the code, data, and model files into the container
+# Copy the code, data files into the container
 COPY code/ /app/code/
 COPY data/ /app/data/
 # Make port 80 available to the world outside this container
